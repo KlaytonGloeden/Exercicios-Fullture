@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3> 
+            5. Escrever um algoritmo que solicite ao usuário que digite três números inteiros e
+            imprime qual é o menor deles e também a média destes números         
+           
+        </h3>
+    </header>
+    <script>  
+         
+        let numero1 = +prompt("Digite um número inteiro");
+        let numero2 = +prompt("Digite outro número inteiro");
+        let numero3 = +prompt("Digite outro número inteiro");
+        let menorNumero = numero1;
+        let media = (numero1 + numero2 + numero3) / 3;
+        
+        if (numero2 < menorNumero) {
+        menorNumero = numero2;
+       }
+       if (numero3 < menorNumero) {
+       menorNumero = numero3;
+       }
+   
+       alert("O menor número é: " + menorNumero);
+       alert("A média dos números é: " + media);
+       
+    </script>
+    
+</body>
+</html>

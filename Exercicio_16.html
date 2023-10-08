@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>
+            6. Escrever um algoritmo que lê a quantidade informada de pessoas que não estão sendo
+            monitoradas no posto de saúde. Para cada pessoa é anotada o peso e a altura (em
+            metros), que é fornecida pelo usuário, sendo que o peso igual a zero informa o final
+            da leitura. Calcule e escreva:
+            
+            a. A maior altura informada,
+            b. A menor altura informada,
+            c. A média dos pesos informados.
+
+        </h3>
+
+    </header>
+
+    <script>
+        
+        let peso = +prompt("Informe o peso da pessoa");
+        let altura = +prompt("Informe a altura da pessoa");
+        let maiorAtura ;
+        let somaPesos ;
+        let quantidadePesos ;
+        let mediaPesos = somaPesos / quantidadePesos;
+        
+        for(let i = 1; i <= quantidadePessoas; i++) {
+            if (peso === 0 && i === 1) {    
+                maiorAltura = altura;
+                menorAltura = altura;
+            } else if (altura > maiorAltura && altura < menorAltura ) 
+                    maiorAltura = altura;
+                    menorAltura = altura;
+                    alert("Maior altura informada: " + maiorAltura);
+                
+        }    
+            alert("Média dos pesos informados: " + mediaPesos);
+        
+    </script>
+
+    
+</body>
+</html>

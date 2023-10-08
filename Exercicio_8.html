@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>
+            8. A empresa de fornecimento de energia elétrica da sua cidade disponibilizou a tabela
+            de consumo de energia elétrica em Kwh. Escreva um algoritmo para calcular a conta
+            de energia elétrica de um estabelecimento, considerando a seguinte lista de valores
+            disponibilizada:
+        
+        Consumo em KWH     Preço do KWH R$
+        
+        Até 300             (1,25)
+        de 301 até 600      (1,50)
+        de 601 até 1000     (1,75)
+        Acima de 1000       (2,00)
+        
+
+        </h3>
+    </header>
+    <script>
+
+        let consumo = +prompt("Digite o seu consumo:");
+        let preco;
+
+        if (consumo <= 300) {
+          preco = 1.25;
+        } else if (consumo <= 600) {
+         preco = 1.50;
+        } else if (consumo <= 1000) {
+         preco = 1.75;
+        } else {
+         preco = 2.00;
+        }
+
+        let conta = consumo * preco;
+        alert("O valor da sua conta é: " + conta);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>
+            20. Escrever um algoritmo que lê uma quantidade informada inicialmente de notas de
+            alunos da disciplina de Lógica. Para cada aluno são lidas quatro (4) notas variando de
+            zero (0) a dez (10). Para ser aprovado o aluno necessita de média igual ou superior a
+            seis (6). Ler as notas, calcular a média e armazenar em uma matriz (Vetor
+            bidimensional). Considere o índice da linha da matriz como o número do aluno na 
+            chamada. Após o cálculo da média, ler os dados e escrever: “O Aluno y foi Aprovado
+            (ou Reprovado) com média x,xx”. No final informar:
+            
+            a. quantos alunos foram aprovados,
+            b. quantos alunos foram reprovados,
+            c. qual a porcentagem de alunos aprovados.
+            
+
+        </h3>
+
+    </header>
+
+    <script>
+        
+        let quantidadeAlunos = +prompt("Digite a quantidade de alunos: ");
+        let aprovados = 0 ;
+        let reprovados = 0;
+        let porcentagemAprovados = (aprovados / quantidadeAlunos) * 100;
+        
+        for (let i = 1; i <= quantidadeAlunos; i++) {
+          let nota = +prompt("Digite a nota do aluno: ");
+        
+          if (nota >= 6) {
+            aprovados++;
+            alert("Aprovado");
+          } else {
+            reprovados++;
+            alert("Reprovado");
+          }
+        }
+        
+        
+        alert("Alunos aprovados: " + aprovados);
+        alert("Alunos reprovados: " + reprovados);
+        alert("Porcentagem de alunos aprovados: " + porcentagemAprovados);
+        
+        
+        
+
+        
+    </script>
+
+    
+</body>
+</html>
